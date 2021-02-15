@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selamat Datang di Website aldo">
+    <meta name="og:description" content=".AOKWOKAOWKOWKOAWKAO." />
+    <meta name="og:title" content="Belajar Otodidak"/>
+    <meta name="og:image" content="https://picsum.photos/seed/213/300" />
+    <link rel="stylesheet" href="./src/style/index.css">
+    <link rel="stylesheet" href="./src/style/login.css">
+    <title>Aldo</title>
+</head>
+<body>
+
+    <main class="containerCenter">
+
+        <!--NAVIGASI BAR-->
+        <nav class="navbar">
+            <h1 class="brand">A L D O</h1>
+            <ul class="menu">
+                <li class="menuItem">
+                    <a href="/">login</a>
+                </li>
+                <li class="menuItem">
+                    <a href="/register">register</a>
+                </li>
+                
+            </ul>
+        </nav>
+        <!--NAVIGASI BAR-->
+
+        <!--LOGIN FORM-->
+        <form class="loginForm" onsubmit="btnLogin.handleLogin(event)">
+            <div class="formGroup">
+                <label for="email">Email</label>
+                <input 
+                    type="email"
+                    id="email" 
+                    class="loginEmail"
+                    style="
+                        font-weight : 100;
+                        font-size : 1rem;
+                        font-family: 'Fira Sans Condensed', sans-serif;
+
+                    ">
+                <small class="helper" id="helper_email_error">!--> Email harus diisi</small>
+            </div>
+
+            <div class="formGroup">
+                <label for="password">Password</label>
+                <input 
+                    type="password"
+                    id="password" 
+                    class="loginPassword"
+                    style="
+                        font-weight : 100;
+                        font-size : 1rem;
+                        font-family: 'Fira Sans Condensed', sans-serif;
+                    ">
+                <small class="helper" id="helper_password_error">!--> Password harus diisi</small>
+            </div>
+
+            <div class="formGroup">
+                <button 
+                    type="submit" 
+                    class="loginButton"
+                    style="
+                        font-weight : 100;
+                        font-size : 1rem;
+                        font-family: 'Fira Sans Condensed', sans-serif;
+                    "
+                >login</button>
+                <small>
+                    <a href="./register">Register</a>
+                </small>
+            </div>
+        </form>
+        <!--LOGIN FORM-->
+
+        <!--BACKGROUND IMAGE-->
+        <div class="background">
+            <div class="backgroundLeft">
+
+            </div>
+            <div class="backgroundRight">
+
+            </div>
+        </div>
+        <!--BACKGROUND IMAGE-->
+    
+    </main> 
+
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
